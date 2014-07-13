@@ -9,7 +9,7 @@ df$Date <- as.POSIXct(paste(df$Date,df$Time),
                       format="%d/%m/%Y %H:%M:%S")
 
 # set output file
-png("plot3.png")
+png("plot3.png", width=504, height=504, bg="transparent")
 
 attach(df)
 plot(Date, Sub_metering_1, 

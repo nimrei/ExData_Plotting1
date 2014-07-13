@@ -9,7 +9,7 @@ df$Date <- as.POSIXct(paste(df$Date,df$Time),
                       format="%d/%m/%Y %H:%M:%S")
 
 # set output file
-png("plot4.png")
+png("plot4.png", width=504, height=504, bg="transparent")
 
 attach(df)
 

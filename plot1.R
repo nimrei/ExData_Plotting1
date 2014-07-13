@@ -9,7 +9,7 @@ df$Date <- as.POSIXct(paste(df$Date,df$Time),
                       format="%d/%m/%Y %H:%M:%S")
 
 # plot data into "plot1.png" file
-png("plot1.png")
+png("plot1.png", width=504, height=504, bg="transparent")
 
 with(df,
      hist(Global_active_power, 
